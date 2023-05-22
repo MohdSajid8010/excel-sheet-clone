@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+</head>
+
+<body>
+  <nav id="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">File</a></li>
+      <li><a href="#">Insert</a></li>
+      <li><a href="#">Layout</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Edit</a></li>
+    </ul>
+  </nav>
+
+  <div id="container-icons">
+    
+      
+    <span class="material-icons" id="copy">
+      content_copy
+    </span>
+    <span class="material-icons" id="cut">
+      content_cut
+    </span>
+    <span class="material-icons" id="paste">
+      content_paste
+    </span>
+    <select name="font-family" id="font-family">
+      <option value="monospace">monospace</option>
+      <option value="sans-serif">san-serif</option>
+      <option value="sans-serif">san-serif</option>
+      <option value="fantasy">fantasy</option>
+      <option value="cursive">cursive</option>
+    </select>
+    <select name="fontSelect" id="font-size">
+      <option value="12px">12</option>
+      <option value="14px">14</option>
+      <option value="16px">16</option>
+      <option value="18px">18</option>
+      <option value="20px">20</option>
+      <option value="22px">22</option>
+      <option value="24px">24</option>
+      <option value="26px">26</option>
+      <option value="28px">28</option>
+    </select>
+
+    <span class="material-icons" id="bold-btn">
+      format_bold
+    </span>
+    <span class="material-icons" id="italic-btn">format_italic</span>
+    <span class="material-icons" id="underline-btn">format_underlined</span>
+    <span class="material-icons" id="center">format_align_center</span>
+    <span class="material-icons" id="left">format_align_left</span>
+    <span class="material-icons" id="right"> format_align_right</span>
+    
+
+    
+      
+    <span class="material-icons" id="download" onclick="downloadJson()"> download</span>
+
+    <label for="choosefile1">
+      <input type="file" id="choosefile1" />
+      <span class="material-icons" onclick="chooseFile()" accept=".json">upload</span>
+    </label>
+
+    <label for="text-color">
+      <input type="color" id="text-color" />
+
+      <span class="material-icons">format_color_text</span>
+    </label>
+
+    <label for="bg-color">
+      <input type="color" id="bg-color" />
+      <span class="material-icons">format_color_fill</span>
+    </label>
+
+    <span class="material-icons" id="addSheet">add</span>
+    <span class="sheets">
+      <span class="material-icons" id="sheet-1" onclick="showCurrSheetData(this)">file_present</span>
+    </span>
+
+    <span class="material-icons" id="removeFile"> remove </span>
+    
+  </div>
+
+  <div id="inputboxActiveCell">
+    <p id="cellNo" spellcheck="true"></p>
+    <i id="fx">fx</i>
+    <input type="text" id="formula" />
+  </div>
+
+
+
+  <table class="myTable">
+    <thead>
+      <tr class="table-headCol">
+        <th></th>
+      </tr>
+    </thead>
+    <tbody class="table-body"></tbody>
+  </table>
+
+  <script src="./index.js"></script>
+  <script src="./index2.js"></script>
+</body>
+ 
+</html>

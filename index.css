@@ -1,0 +1,158 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #3697b7;
+  padding: 10px 40px;
+  /* border: 2px solid red; */
+  overflow-x: auto;
+
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+ul a:hover {
+  background-color: #7bc5dd;
+
+}
+
+#container-icons {
+  background-color: #7bc5dd;
+  display: flex;
+  /* gap: 20px; */
+  align-items: center;
+
+  /* border: 2px solid red; */
+  overflow-x: auto;
+
+}
+
+#container-icons::-webkit-scrollbar {
+  display: none;
+}
+
+#container-icons span {
+  cursor: pointer;
+  padding: 10px;
+
+}
+
+input[type="file"],
+input[type="color"] {
+  width: 1px;
+  height: 1px;
+  background-color: #3697b7;
+  color: #3697b7;
+  visibility: hidden;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  margin-left: 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+select {
+  margin: 3px;
+  padding: 3px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+#inputboxActiveCell {
+  background-color: #7bc5dd;
+  display: flex;
+  padding: 10px 10px;
+  /* border: 2px solid red; */
+  overflow-x: auto;
+
+}
+
+#cellNo {
+  width: 50px;
+  height: 20px;
+  background-color: white;
+  color: #3697b7;
+  margin-right: 40px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+}
+
+td,
+th {
+  border: 1px solid lightgrey;
+  width: 180px;
+  padding-left: 2px;
+  background-color: rgb(253, 254, 254);
+}
+
+option {
+  background-color: #3697b7;
+  color: white;
+}
+
+option:hover {
+  background-color: #3697b7;
+  color: white;
+}
+
+td:focus {
+  outline: none;
+}
+
+input[type="text"] {
+  outline: none;
+  padding-left: 3px;
+
+}
+
+.sheets {
+  display: flex;
+
+}
+
+@media (max-width:650px) {
+  ul {
+
+    gap: 10px;
+    padding: 10px;
+
+  }
+
+  ul a {
+    padding: 10px;
+  }
+  
+#cellNo {
+  margin-right: 20px;
+}
+
+}
